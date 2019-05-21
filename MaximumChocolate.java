@@ -13,7 +13,8 @@ public class MaximumChocolate {
         int dp[][] = new int[n][n];
         long max = -1;
         for (int i = 0; i < n; i++) {
-            for (int j = 0; j < n; j++) {
+            for (int j = 0; j < n; j++) 
+            {
                 dp[i][j] += sc.nextInt();
                 System.out.println(dp[i][j]);
                 max = Math.max(dp[i][j],max);
