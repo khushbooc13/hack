@@ -1,3 +1,10 @@
+/*Xsquare loves to play with arrays a lot. Today, he has two arrays named as A and B. 
+Each array consists of N positive integers.
+Xsquare has decided to fulfill following types of queries over his array A and array B.
+1 L R : Print the value of AL + BL+1 + AL+2 + BL+3 + ... upto Rth term.
+2 L R : Print the value of BL + AL+1 + BL+2 + AL+3 + ... upto Rth term.
+*/
+
 import java.io.*;
 import java.util.*;
 class XsquareAndTwoArrays {

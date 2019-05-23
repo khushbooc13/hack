@@ -34,7 +34,7 @@ class Villages1{
 		}
 		for(int j=i+1;j<n;j++)
 		{
-			//if(arr[j]%arr[i]==0)
+			if(arr[j]%arr[i]==0)
 				max[k++]+=FindMax(j,n,arr);
 		}
 
@@ -43,3 +43,31 @@ class Villages1{
 		return max[n-1];
 	}
 }
+
+
+/*static int solve(int[] array)
+{
+    Integer[] dp = new Integer[array.length];
+    int result = 0;
+    for(int i = 0 ; i< array.length ; i++)
+    {
+       dp[i] = array[i]; 
+    }
+    
+    for(int i = 1 ; i<array.length ; i++)
+    {   
+        for(int j=0;j<i;j++)
+        {
+            if(array[i] % array[j] == 0)
+            {
+                dp[i] = dp[j] + array[i];
+            }
+            
+        }
+    }
+    
+    result = Collections.max(Arrays.asList(dp));
+    return result;
+    
+}
+    */
